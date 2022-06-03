@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.application'
-    id "io.spring.dependency-management" version "1.0.3.RELEASE"
+//    id "io.spring.dependency-management" version "1.0.3.RELEASE"
 
 }
 
@@ -39,6 +39,9 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.navigation:navigation-fragment:2.4.2'
     implementation 'androidx.navigation:navigation-ui:2.4.2'
+    implementation 'android.arch.persistence.room:runtime:1.0.0-alpha1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha1'
+    implementation 'android.arch.persistence.room:rxjava2:1.0.0-alpha1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
