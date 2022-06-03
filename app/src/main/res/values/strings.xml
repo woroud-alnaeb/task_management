@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">task_managment</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome">Welcome !</string>
+    <string name="login_failed">Login failed</string>
+    <string name="action_sign_in">Login</string>
+    <string name="prompt_password">Enter Password</string>
+    <string name="prompt_email">Enter Email</string>
+    <string name="login_title">Login To your Account</string>
+</resources>
