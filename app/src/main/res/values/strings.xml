@@ -13,8 +13,8 @@
     <string name="prompt_password">Enter Password</string>
     <string name="prompt_email">Enter Email</string>
     <string name="login_title">Login To your Account</string>
-    <string name="title">Title</string>
     <string name="description">Description</string>
     <string name="task_date">Task Date</string>
     <string name="add_task">Add Task</string>
+    <string name="title">Title</string>
 </resources>

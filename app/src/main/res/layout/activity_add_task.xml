@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
+
         <EditText
             android:id="@+id/ed_desc"
             android:layout_width="match_parent"
@@ -62,7 +63,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:padding="3dp"
-            android:src="@drawable/log" />
+            android:src="@drawable/desc" />
 
     </RelativeLayout>
 
@@ -70,6 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
+
         <TextView
             android:id="@+id/tv_date"
             android:layout_width="match_parent"
@@ -88,7 +90,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:padding="3dp"
-            android:src="@drawable/log" />
+            android:src="@drawable/date" />
 
     </RelativeLayout>
 

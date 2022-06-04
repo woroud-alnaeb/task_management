@@ -6,11 +6,12 @@
         <entry key="../../../../layout/custom_preview.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.1046875" />
-        <entry key="app/src/main/res/layout/activity_add_task.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add_task.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.13958333333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_search.xml" value="0.16482412060301507" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/task_view.xml" value="0.25" />
       </map>
     </option>
   </component>
