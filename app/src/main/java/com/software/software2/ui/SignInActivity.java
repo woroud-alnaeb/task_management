@@ -1,7 +1,5 @@
 package com.software.software2.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.software.software2.R;
 import com.software.software2.data.LoginDataSource;
@@ -44,14 +44,10 @@ public class SignInActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), getString(R.string.welcome), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                 startActivity(intent);
-
+                finish();
             } else {
                 Toast.makeText(getApplicationContext(), getString(R.string.login_failed), Toast.LENGTH_LONG).show();
             }
-
-
-            //Complete and destroy login activity once successful
-            finish();
         });
     }
 }

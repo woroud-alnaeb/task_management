@@ -13,11 +13,4 @@ public class UserModel {
         this.displayName = displayName;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public String getDisplayName() {
-        return displayName;
-    }
 }

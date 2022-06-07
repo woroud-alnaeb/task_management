@@ -39,6 +39,7 @@ public class AddTaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_task);
         db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class, "task_management_example").build();
+        taskDao = db.taskDao();
         back = findViewById(R.id.clear);
         ed_title = findViewById(R.id.ed_title);
         ed_desc = findViewById(R.id.ed_desc);
@@ -46,7 +47,6 @@ public class AddTaskActivity extends AppCompatActivity {
         tv_date = findViewById(R.id.tv_date);
 
         back.setOnClickListener(view -> finish());
-        taskDao = db.taskDao();
         tv_date.setOnClickListener(view -> {
             showDialog(999);
         });

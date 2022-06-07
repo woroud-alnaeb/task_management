@@ -1,6 +1,7 @@
 package com.software.software2.ui;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
@@ -50,11 +51,15 @@ public class SearchActivity extends AppCompatActivity {
             System.out.println("CompletableFuture is not finished yet...");
         }
 
-        recyclerView = findViewById(R.id.recyclerView);
-        linearLayoutManager = new LinearLayoutManager(con);
-        itemAdapter = new TaskAdapter(con, itemArrayList);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(itemAdapter);
+        AsyncTask.execute(() -> {
+            itemArrayList = (ArrayList<Task>) taskDao.getAll();
+            recyclerView = findViewById(R.id.recyclerView);
+            linearLayoutManager = new LinearLayoutManager(con);
+            itemAdapter = new TaskAdapter(con, itemArrayList);
+            recyclerView.setLayoutManager(linearLayoutManager);
+            recyclerView.setAdapter(itemAdapter);
+        });
+
 
     }
 
